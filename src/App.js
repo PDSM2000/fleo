@@ -22,7 +22,7 @@ function App() {
   }, [perPage, ascdsc, sort, page])
 
   useEffect(() => {
-    debunceRef.current = debounce(fetchData, 1000);
+    debunceRef.current = debounce(fetchData, 600);
   }, [])
   useEffect(() => {
     if (language) {
