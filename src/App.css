@@ -17,15 +17,70 @@
 .app_body {
   position: relative;
   width: 100%;
-  height: calc(100% - 70px);
+  height: calc(100% - 120px);
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.child {
+.app_control {
+  position: relative;
   width: 100%;
-  height: 200px;
-  margin-bottom: 30px;
-  background-color: green;
+  height: 50px;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app_search_input {
+  width: 300px;
+  height: 30px;
+  outline: none;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+.app_number_input {
+  width: 50px;
+  height: 30px;
+  outline: none;
+  border-radius: 7px;
+  padding-left: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.app_asc_desc {
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.app_buttons {
+  display: flex;
+  padding-top: 10px;
+}
+
+.app_buttons_back {
+  padding: 2px 5px 2px 5px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.app_page_count {
+  width: 20px;
+  height: 20px;
+}
+
+.app_buttons_next {
+  padding: 2px 5px 2px 5px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
 }
 
 .app_body::-webkit-scrollbar {
