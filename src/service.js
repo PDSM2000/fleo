@@ -1,4 +1,3 @@
-const base = "https://api.github.com/search/repositories?q=language:Javascript&sort=stars&order=desc&page=1&per_page="
 const fetchData = async function (options) {
     console.log(arguments)
     let option;
